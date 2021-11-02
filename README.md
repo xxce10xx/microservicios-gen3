@@ -19,10 +19,10 @@ IDE STS
 _Este repositorio fue construido en sesiones dictadas online_
 
 * **Cedric Bardalez** - *Docente*
-* **Escalab Academy** - *Instituci¨®n educativa*
+* **Escalab Academy** - *Institución educativa*
 * **Estudiantes Gen3** - *Alumnos de la generaci¨®n 3* 
 
 ## Contenido ??
 
-* **Sesión 1** - *Repaso te¨®rico de los conceptos principales asociados a la arquitectura basada en microservicios*
+* **Sesión 1** - *Repaso teórico de los conceptos principales asociados a la arquitectura basada en microservicios*
 * **Sesión 2** - *Levantamos nuestro primer microservicio y estudiamos el servidor de registro y descubrimiento (Eureka Server)* 
