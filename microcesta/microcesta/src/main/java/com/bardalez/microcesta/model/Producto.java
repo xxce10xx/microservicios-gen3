@@ -1,4 +1,4 @@
-package com.bardalez.microproductos.model;
+package com.bardalez.microcesta.model;
 /*
  * Aplicativo desarrollado para la clase de Java Expert
  * Autor: Cedric Bardalez (CJava Perú)
@@ -6,22 +6,14 @@ package com.bardalez.microproductos.model;
  * www.cjavaperu.com
  */
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Transient;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection = "producto")
 public class Producto {
 	
-	@Id 
 	private String codigo;
 	private String nombre;
 	private String marca;
 	private Integer unidades;
 	private Double precioUnitario;
 	private String descripcion;
-	@Transient
-	private String port;
 	
 	public Producto() {}
 
@@ -82,12 +74,6 @@ public class Producto {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
+	
 
-	public String getPort() {
-		return port;
-	}
-
-	public void setPort(String port) {
-		this.port = port;
-	}
 }
