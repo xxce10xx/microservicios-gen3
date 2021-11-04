@@ -2,7 +2,6 @@
 
 _En este repositorio subiremos ejemplos del curso de Microservicios con Spring Cloud (Generacion 3) de la institucion Escalab Academy_
 
-
 ### Pre-requisitos
 
 _Conocimientos y herramientas necesarias para empezar el curso_
@@ -26,4 +25,4 @@ _Este repositorio fue construido en sesiones dictadas online_
 
 * **Sesion 1** - *Repaso teorico de los conceptos principales asociados a la arquitectura basada en microservicios*
 * **Sesion 2** - *Levantamos nuestro primer microservicio y estudiamos el servidor de registro y descubrimiento (Eureka Server)*
-* **Sesion 3** - *Levantamos y configuramos nuestro servidor de configuracion centralizada (Spring Cloud Config) 
+* **Sesion 3** - *Levantamos y configuramos nuestro servidor de configuracion centralizada (Spring Cloud Config)*
