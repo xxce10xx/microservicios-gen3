@@ -2,7 +2,6 @@ package com.bardalez.microcesta.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RetryRule;
 import com.netflix.loadbalancer.RoundRobinRule;
@@ -14,6 +13,7 @@ public class RibbonConfigurator {
 	@Bean
 	public IRule ribbonRule() {
 		//return new RetryRule(new WeightedResponseTimeRule(), 500);
-		 return new RoundRobinRule();
+		  return new RoundRobinRule();
+		// return new MyRegla();
 	}
 }

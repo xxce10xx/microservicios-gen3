@@ -57,8 +57,8 @@ public class CestaController {
 		
 	}
 	
-//	@HystrixCommand(fallbackMethod = "fallbackMethod2", commandProperties = {
-//            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "10")})
+	@HystrixCommand(fallbackMethod = "fallbackMethod2", commandProperties = {
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "10")})
 	@GetMapping("/producto/{codigo}")
 	public Producto getProducto(@PathVariable String codigo)
 	{
@@ -70,13 +70,16 @@ public class CestaController {
 	
 //	@HystrixCommand(fallbackMethod = "fallbackMethod2")
 //	private Producto fallbackMethod(String codigo) {
-//		System.out.println("*************************FALLE DE NUEVO*********************************");
-//		Producto prod = restTemplate.getForObject("http://SERVICIO.CATALOGO/producto/"+codigo, Producto.class);
-//		return prod;
-//		//return new Producto("0","Articulo de prueba","prueba",1, 38.5, "dasdasd");
+//		  System.out.println("*************************FALLE DE NUEVO*********************************");
+//		  Producto prod = restTemplate.getForObject("http://SERVICIO.CATALOGO/producto/"+codigo, Producto.class);
+//		  return prod;
+//		//return new Producto("-1","Articulo de prueba","prueba",1, 38.5, "dasdasd");
 //	}
 	
-//	private Producto fallbackMethod2(String codigo) {
-//		return new Producto("0","Articulo de prueba","prueba",1, 38.5, "dasdasd");
-//	}
+	private Producto  fallbackMethod2(String codigo) {
+		//return new Producto("-2","Articulo de prueba","prueba",1, 38.5, "dasdasd");
+		//Cesta miCesta = new Cesta();
+		//miCesta.setNombreProducto("TV");
+		return new Producto("-2","Articulo de prueba","prueba",1, 38.5, "dasdasd");
+	}
 }

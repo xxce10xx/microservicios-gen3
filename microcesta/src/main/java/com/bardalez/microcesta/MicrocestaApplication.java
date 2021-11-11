@@ -5,12 +5,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClients;
+
 import com.bardalez.microcesta.config.RibbonConfigurator;
 
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@RibbonClient(name = "restTemplate", configuration = {RibbonConfigurator.class})
+@RibbonClients(defaultConfiguration = {RibbonConfigurator.class})
 @EnableCircuitBreaker
 public class MicrocestaApplication {
 

@@ -1,10 +1,10 @@
-cedric:
-  propiedad:
-    refresh: hola
+#cedric:
+  #propiedad:
+    #refresh: hola
 
 #HTTP Server
 server:
-  port: 0
+  port: 1111
 
 #Discovery Server Access
 eureka:
