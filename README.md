@@ -28,3 +28,4 @@ _Este repositorio fue construido en sesiones dictadas online_
 * **Sesion 3** - *Levantamos y configuramos nuestro servidor de configuracion centralizada (Spring Cloud Config)*
 * **Sesion 4** - *Estudiamos el balanceo de carga de lado del cliente y su configuracion (Ribbon)*
 * **Sesion 5** - *Explicamos el concepto de tolerancia a fallos, detallamos el Patrón Circuit Breaker y su implementación (Hystrix)*
+* **Sesion 6** - *Explicamos las estrategias de aislamiento en Hystrix y levantamos su dashboard (Hystrix Dashboard)*
