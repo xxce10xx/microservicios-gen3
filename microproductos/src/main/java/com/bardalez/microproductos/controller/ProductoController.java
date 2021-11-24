@@ -57,6 +57,12 @@ public class ProductoController
 	@GetMapping("/productos")
 	public List<Producto> getProductos()
 	{
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		List<Producto> productList = productoRepository.findAll();
 		return productList;
 	}

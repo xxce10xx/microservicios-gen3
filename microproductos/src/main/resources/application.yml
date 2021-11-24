@@ -1,6 +1,6 @@
-#cedric:
-  #propiedad:
-    #refresh: hola
+cedric:
+  propiedad:
+    refresh: hola
 
 #HTTP Server
 server:
