@@ -1,7 +1,3 @@
-cedric:
-  propiedad:
-    refresh: hola
-
 #HTTP Server
 server:
   port: 1111
@@ -10,15 +6,12 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      default-zone: http://localhost:8761/eureka
   instance:
     status-page-url-path: /infoCatalogo
     health-check-url-path: /healthCatalogo
     metadata-map:
        app-owner: cedser
        description: test application for the expert course
-       
-    #instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-       
-    initial-status: UP
-    lease-renewal-interval-in-seconds: 40
+
+security:  oauth2:    resource:      user-info-uri: http://localhost:7777/user

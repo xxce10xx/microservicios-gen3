@@ -17,9 +17,9 @@ public class MicrozuulApplication {
 		SpringApplication.run(MicrozuulApplication.class, args);
 	}
 	
-	@Bean
-	public MiPreFiltro miPreFiltro() {
-		return new MiPreFiltro();
-	}
+//	@Bean
+//	public MiPreFiltro miPreFiltro() {
+//		return new MiPreFiltro();
+//	}
 
 }

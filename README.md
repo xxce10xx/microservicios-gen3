@@ -30,3 +30,11 @@ _Este repositorio fue construido en sesiones dictadas online_
 * **Sesion 5** - *Explicamos el concepto de tolerancia a fallos, detallamos el Patrón Circuit Breaker y su implementación (Hystrix)*
 * **Sesion 6** - *Explicamos las estrategias de aislamiento en Hystrix y levantamos su dashboard (Hystrix Dashboard)*
 * **Sesion 7** - *Explicamos el funcionamiento y configuracion del servidor perimetral (Zuul)*
+* **Sesion 8** - *Explicamos conceptos teoricos sobre los flujos de autenticacion (OAuth2)*
+* **Sesion 9** - *Levantamos nuestro servidor de Autenticacion y Autorizacion (UAA)*
+* **Sesion 10** - *Configuramos CORS, ROLES, securizamos nuestros microservicios y ponemos los aspectos de seguridad vistos en funcionamiento en conjunto (Security)*
+
+## Imagenes referenciales
+
+_Flujos de Autenticacion_<br/>
+![Flujos de Autenticacion](https://raw.githubusercontent.com/xxce10xx/microservicios-gen3/main/assets/authorization_flows.PNG)

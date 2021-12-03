@@ -1,23 +1,20 @@
 package com.bardalez.microproductos.controller;
 /*
- * Aplicativo desarrollado para la clase de escalab Academy
+ * Aplicativo desarrollado para la clase de Java Expert
  * Autor: Cedric Bardalez
  * Version 1.0
+ * www.cjavaperu.com
  */
 
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import com.bardalez.microproductos.config.PropertieCedric;
 import com.bardalez.microproductos.model.Producto;
 import com.bardalez.microproductos.repository.ProductoRepository;
 
@@ -28,41 +25,21 @@ public class ProductoController
 	@Autowired
 	ProductoRepository productoRepository;
 	
-	@Value("${server.port}")
-	private String puerto;
-	
 	@Autowired
 	private MongoTemplate mongoTemplate;
 	
 	@Autowired
-	private PropertieCedric prop;
-	
-	@GetMapping("/cedric")
-	public String getPropertie() {
-		return prop.getMessage();
-	}
+	private Environment environment;
 
 	@GetMapping(value = "/healthCatalogo", produces = "application/json; charset=utf-8")
 	public String getHealthCheck()
 	{
 		return "{ \"todoOk\" : true }";
 	}
-	
-//	@RequestMapping("/")
-//	public String ribbonPing()
-//	{
-//		return "Ok";
-//	}
 
 	@GetMapping("/productos")
 	public List<Producto> getProductos()
 	{
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		List<Producto> productList = productoRepository.findAll();
 		return productList;
 	}
@@ -79,19 +56,13 @@ public class ProductoController
 	}
 
 	@GetMapping("/producto/{codigo}")
-	public Optional<Producto> getProducto(@PathVariable String codigo)
+	public Producto getProducto(@PathVariable String codigo)
 	{
 		Optional<Producto> prod = productoRepository.findById(codigo);
 		Producto prodTemp = prod.get();
-		prodTemp.setPort(puerto);
-		return prod;
+		prodTemp.setPort(environment.getProperty("server.port"));
+		return prodTemp;
 	}
-	
-//	@GetMapping("/producto/{codigo}")
-//	public ResponseEntity<Producto> getProducto(@PathVariable String codigo)
-//	{
-//		return new ResponseEntity<Producto>(HttpStatus.BAD_REQUEST);
-//	}
 
 	@PutMapping("/producto/{codigo}")
 	public Optional<Producto> updateEmployee(@RequestBody Producto newProducto, @PathVariable String codigo)
