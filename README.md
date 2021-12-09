@@ -33,6 +33,7 @@ _Este repositorio fue construido en sesiones dictadas online_
 * **Sesion 8** - *Explicamos conceptos teoricos sobre los flujos de autenticacion (OAuth2)*
 * **Sesion 9** - *Levantamos nuestro servidor de Autenticacion y Autorizacion (UAA)*
 * **Sesion 10** - *Configuramos CORS, ROLES, securizamos nuestros microservicios y ponemos los aspectos de seguridad vistos en funcionamiento en conjunto (Security)*
+* **Sesion 11** - *Explicamos el patron Database per Services (pros y contras) y tambien detallamos el patron API Facade Composition para consultas sobre datos relacionados - (API Facade Composition)*
 
 ## Imagenes referenciales
 
