@@ -23,7 +23,7 @@ _Este repositorio fue construido en sesiones dictadas online_
 
 ## Contenido
 
-* **Sesion 1** - *Repaso teorico de los conceptos principales asociados a la arquitectura basada en microservicios*
+* **Sesion 1** - *Repaso teorico de los conceptos principales asociados a la arquitectura basada en microservicios (Definicion)*
 * **Sesion 2** - *Levantamos nuestro primer microservicio y estudiamos el servidor de registro y descubrimiento (Eureka Server)*
 * **Sesion 3** - *Levantamos y configuramos nuestro servidor de configuracion centralizada (Spring Cloud Config)*
 * **Sesion 4** - *Estudiamos el balanceo de carga de lado del cliente y su configuracion (Ribbon)*
@@ -33,8 +33,9 @@ _Este repositorio fue construido en sesiones dictadas online_
 * **Sesion 8** - *Explicamos conceptos teoricos sobre los flujos de autenticacion (OAuth2)*
 * **Sesion 9** - *Levantamos nuestro servidor de Autenticacion y Autorizacion (UAA)*
 * **Sesion 10** - *Configuramos CORS, ROLES, securizamos nuestros microservicios y ponemos los aspectos de seguridad vistos en funcionamiento en conjunto (Security)*
-* **Sesion 11** - *Explicamos el patron Database per Services (pros y contras) y tambien detallamos el patron API Facade Composition para consultas sobre datos relacionados - (API Facade Composition)*
+* **Sesion 11** - *Explicamos el patron Database per Services (pros y contras) y tambien detallamos el patron API Facade Composition para consultas sobre datos relacionados (API Facade Composition)*
 * **Sesion 12** - *Explicamos y ejemplificamos el patron SAGA por coreografia, tambien vimos el patron bulkhead (SAGA - Resilience4j)*
+* **Sesion 13** - *Explicanos y ejemplificanos el patron SAGA por orquestacion (SAGA)*
 
 ## Imagenes referenciales
 
